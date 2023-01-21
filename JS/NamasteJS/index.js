@@ -36,6 +36,8 @@
 /* -----------------------😋😋😋😋😋 -------------------😋😋😋😋😋------------------------------------*/
 // GLOBAL : EVERY THINGS WHICH IS NOT INTO THE ANY FUNCTION ARE CALLED GLOBAL EXECUTION CONTEXT
 // WHEN EMPTY OUR CODE (THEN A GGLOBAL OBJECT IS CREATED AND A THIS KEYWORD IS ALSO CREATED WHICH POINT OUT THE WINDOW OBJECT: EX: VAR GLOBAL ={} ARE SOMETHING LIKE THIS)
-var obj = {
-  name: "nitesh",
-};
+// var obj = {
+//   name: "nitesh",
+// };
+
+var x = 2;
