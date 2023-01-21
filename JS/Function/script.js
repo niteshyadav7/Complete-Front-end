@@ -53,6 +53,25 @@ const lufthansa = {
     this.bookings.push({ flight: `${this.airline} ${flightNum} `, name });
   },
 };
+const swiss = {
+  // name: 'Swiss AirLines',
+  airline: 'Swiss AirLines',
+  iataCode: 'LX',
+  bookings: [],
+};
 lufthansa.book(239, 'Jonas');
 lufthansa.book(234, 'Nitesh');
 console.log(lufthansa);
+const book = lufthansa.book;
+book.call(lufthansa, 23, 'Nitesh Yadav');
+book.call(swiss, 25, 'Gk');
+const BindEW = book.bind(swiss, 34);
+// BindEW(23, 'nirtesh');
+BindEW('nirtesh');
+/*
+const xyz = {
+  name: 'nitesh',
+};
+xyz.age = 23;
+console.log(xyz.age);
+*/
