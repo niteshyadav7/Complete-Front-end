@@ -155,7 +155,29 @@ GOOD LUCK 😀
 // calcAge(1991);
 
 /////////////////////////////////////////////
+// Varibles
+// console.log(myName);
+// // console.log(myAge);
+// // console.log(address);
 
-var myName = 'Nitesh';
-let myAge = 23;
-const address = 'Mau';
+// var myName = 'Nitesh';
+// let myAge = 23;
+// const address = 'Mau';
+
+// Function
+// declearation function
+console.log(addDec(2, 3));
+function addDec(a, b) {
+  return a + b;
+}
+
+// function expression
+console.log(addEx(2, 3));
+const addEx = function (a, b) {
+  return a + b;
+};
+
+// arrow function
+console.log(addArr(2, 3));
+const addArr = (a, b) => a + b;
+// console.log(addArr(2, 3));
