@@ -166,18 +166,130 @@ GOOD LUCK 😀
 
 // Function
 // declearation function
-console.log(addDec(2, 3));
-function addDec(a, b) {
-  return a + b;
-}
+// console.log(addDec(2, 3));
+// function addDec(a, b) {
+//   return a + b;
+// }
 
-// function expression
-console.log(addEx(2, 3));
-const addEx = function (a, b) {
-  return a + b;
-};
+// // function expression
+// console.log(addEx(2, 3));
+// const addEx = function (a, b) {
+//   return a + b;
+// };
 
-// arrow function
-console.log(addArr(2, 3));
-const addArr = (a, b) => a + b;
+// // arrow function
 // console.log(addArr(2, 3));
+// const addArr = (a, b) => a + b;
+// // console.log(addArr(2, 3));
+//
+
+///////////////////////////////////////////😋😋😋😋😋😋😋😋😋😋😋😋////////////////////////////////////////////
+///////////////////////////////////////////😋😋😋😋😋😋😋😋😋😋😋😋////////////////////////////////////////////
+///////////////////////////////////////////😋😋😋😋😋😋😋😋😋😋😋😋////////////////////////////////////////////
+
+// Default Parameters
+// 'use strict';
+// const createBookings = function (flightNum, numPassengers, price) {
+//   const booking = {
+//     flightNum,
+//     numPassengers,
+//     price,
+//   };
+//   console.log(booking);
+// };
+// createBookings('DL12', 23, 199);
+
+// const bookings = [];
+// const createBookings = function (name = 'Golu', age = 1, dob = 34) {
+//   const booking = {
+//     name,
+//     age,
+//     dob,
+//   };
+//   // console.log(createBookings);
+//   console.log(booking);
+//   bookings.push(booking);
+// };
+
+// createBookings();
+// console.log(bookings);
+
+// const flight = 'LH234';
+// const jonas = {
+//   name: 'Jonas',
+//   passport: 8875912020,
+// };
+// const checkIn = function (flightNum, passenger) {
+//   flightNum = 'HJ234';
+//   passenger.name = `Mr. ${passenger.name}`;
+//   if (passenger.passport === 8875912020) {
+//     alert('Checked In');
+//   } else {
+//     alert('Checked out');
+//   }
+// };
+// checkIn(flight, jonas);
+// console.log(flight);
+// console.log(jonas);
+
+//////////////////
+
+// const flight = 'LH234';
+// const jonas = {
+//   name: 'Jonas Schmedtmann',
+//   passport: 8875912020,
+// };
+// const checkIn = function (flightNum, passenger) {
+//   flightNum = 'HJ234';
+//   passenger.name = `Mr. ${passenger.name}`;
+//   if (passenger.passport === 8875912020) {
+//     console.log('Correct Input');
+//   } else {
+//     console.log('Incorrect Input');
+//   }
+// };
+// // checkIn(flight, jonas);
+// console.log(flight);
+// console.log(jonas);
+
+// const newPassport = function (person) {
+//   person.passport = Math.trunc(Math.random() * 100000);
+// };
+// newPassport(jonas);
+// checkIn(flight, jonas);
+//////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+//  IN THIS SECTION WE USE MAKE A FUNCTION TO CALCULATE THE AGE OF THE PERSON SO THAT WE CAN USE IT .WHENEVER IS REQUIRED.
+
+// const calcAge = function (birthYear) {
+//   const age = 2023 - birthYear;
+//   return age;
+// };
+
+// // MAKE A HIGHER ORDER FUNCTION
+// const outPut = function (str, fun) {
+//   return `Hey !There my age is ${fun(str)}`;
+// };
+
+// console.log(outPut(2000, calcAge));
+
+// ///////////////////////////////////////////////////////////////////////////
+
+// const greet = function (greeting) {
+//   return function (name) {
+//     console.log(`${greeting}  ${name}`);
+//     return function (x) {
+//       console.log(x);
+//     };
+//   };
+// };
+// const greeter = greet('Hey!');
+// const z = greeter('Jonas');
+// z(2);
+// // console.log(greeter);
+// Challenge By Jonas
+const greet = greeting => {
+  return name => console.log(`${greeting} ${name}`);
+};
+greet('Hey!')('Jonas');
