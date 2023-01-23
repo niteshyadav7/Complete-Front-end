@@ -39,5 +39,3 @@
 // var obj = {
 //   name: "nitesh",
 // };
-
-var x = 2;

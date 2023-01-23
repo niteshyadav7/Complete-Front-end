@@ -1,4 +1,6 @@
+'use strict';
 // Calculate maximum
+
 // const arr = [-1, 4, -8, -34, 77];
 // let max = -Infinity;
 // for (let i = 0; i < arr.length; i++) {
@@ -140,7 +142,7 @@ GOOD LUCK 😀
 // }
 // const x = first();
 // console.log(x);
-'use strict';
+// 'use strict';
 // function calcAge(birthYear) {
 //   const age = 2037 - birthYear;
 //   // console.log(firstName);
@@ -289,7 +291,114 @@ GOOD LUCK 😀
 // z(2);
 // // console.log(greeter);
 // Challenge By Jonas
-const greet = greeting => {
-  return name => console.log(`${greeting} ${name}`);
-};
-greet('Hey!')('Jonas');
+// const greet = greeting => {
+//   return name => console.log(`${greeting} ${name}`);
+// };
+// const greet = greeting =>
+//    name => console.log(`${greeting} ${name}`);
+// ;
+// greet('Hey!')('Jonas');
+/////////////////////////////////////////////////////////////////
+
+// const lufthansa = {
+//   airline: 'Lufthansa',
+//   iataCode: 'LH',
+//   bookings: [],
+//   book(flightNum, name) {
+//     console.log(
+//       `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+//     );
+//     this.bookings.push(`Flight : ${this.iataCode}${flightNum}`, name);
+//   },
+// };
+
+// lufthansa.book(234, 'Jonas Schmedtmann');
+// lufthansa.book(235, 'Nitesh Yadav');
+
+// console.log(lufthansa);
+
+////////////////////////////////////////
+// IIFE:
+// function nameX() {
+//   console.log(`THIS WILL !NEVER RUN AGAIN`);
+// }
+// nameX();
+// /////////////////////
+
+// (function () {
+//   console.log(`This will never run again`);
+// })();
+
+// ////////////////////
+// (() => console.log(`THIS ARROW FUNCTION NEVER RUN AGAIN`))();
+
+// ?/////////////////////////////
+
+// CLOSURES
+
+// const secureBooking = function () {
+//   let numPassengersCount = 0;
+//   return function () {
+//     numPassengersCount++;
+//     console.log(`${numPassengersCount} passengers`);
+//   };
+// };
+// const booker = secureBooking();
+// booker();
+// console.log(booker);
+//////////////////////////////////////////////////////
+//  Destructuring
+
+// const arr = [2, 3, 4];
+// const [x, y, z] = arr;
+// console.log(x, y, z);
+// const [x, , z] = arr;
+// console.log(x, z);
+
+// const arr = ['Nitesh ', '23', 'Yadav'];
+// let [first, , third] = arr;
+// [first, , third] = [third, , first];
+// console.log(first, third);
+////////////////////////
+
+// const obj = {
+//   age: [23, 34, 45],
+//   names: ['nitesh', 'babban', 'gudia', 'pramila'],
+//   abc: function (x, y) {
+//     return [this.names[x], this.age[2]];
+//   },
+// };
+// // console.log(obj.abc(0, 2));
+// // console.log(obj.abc(2, 1));
+// let [first, secondary] = obj.abc(2, 1);
+// // console.log(first, secondary);
+// [first, secondary] = [secondary, first];
+// console.log(first, secondary);
+
+///////////////////////////////////////////////////////////////////////////////
+// const obj = {
+//   name: 'nitesh',
+//   age: 23,
+// };
+// const { name: myName, age: myAge } = obj;
+// console.log(myName, myAge);
+
+let a = 23;
+let b = 34;
+const obj = { a: 3, b: 5 };
+//Uncaught SyntaxError: Unexpected token '=' (at script.js:390:7)
+// {a,b} =obj;
+
+////////////////so usee  ()
+// ({ a, b } = obj);
+// console.log(a, b);
+/////////////////////////
+
+// const arr = [1, 2];
+// const arrr = [3, 4, 5];
+// for (let i = 0; i < arrr.length; i++) {
+//   arr.push(arrr[i]);
+// }
+// console.log(arr);
+//
+// Join to array
