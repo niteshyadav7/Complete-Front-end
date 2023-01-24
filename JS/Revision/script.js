@@ -383,9 +383,9 @@ GOOD LUCK 😀
 // const { name: myName, age: myAge } = obj;
 // console.log(myName, myAge);
 
-let a = 23;
-let b = 34;
-const obj = { a: 3, b: 5 };
+// let a = 23;
+// let b = 34;
+// const obj = { a: 3, b: 5 };
 //Uncaught SyntaxError: Unexpected token '=' (at script.js:390:7)
 // {a,b} =obj;
 
@@ -402,3 +402,22 @@ const obj = { a: 3, b: 5 };
 // console.log(arr);
 //
 // Join to array
+// const arr1 = [1, 23, 4];
+// const arr2 = [345, 67, 565];
+// const arr = [...arr1, ...arr2];
+// console.log(arr);
+// const old = {
+//   name: 'nitesh',
+//   age: 23,
+// };
+// const newList = { foundedIN: 1999, ...old, fr: 2324 };
+// console.log(newList);
+/////////////
+
+let obj = {
+  name: 'nitesh',
+  age: 23,
+};
+for (const day of Object.keys(obj)) {
+  console.log(day);
+}
