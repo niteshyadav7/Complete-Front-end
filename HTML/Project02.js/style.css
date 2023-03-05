@@ -1,0 +1,4 @@
+table,tr,th,td,caption{
+ border: 2px groove gray;   
+ border-collapse: collapse;
+}
